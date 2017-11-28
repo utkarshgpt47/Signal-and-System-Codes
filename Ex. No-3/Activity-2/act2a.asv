@@ -1,0 +1,12 @@
+clc;
+clear all;
+n=-3:4;
+x=[1,1,-2,4,6,-5,8,10];
+x0=3*x;
+xlabel('n');
+ylabel('x[n]');
+title('Activity 2 A');
+
+[x1,m]=sigshift(x,n,2);
+y=3*x1;
+stem(m,y);

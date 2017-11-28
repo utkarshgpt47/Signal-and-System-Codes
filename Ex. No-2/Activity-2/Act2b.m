@@ -1,0 +1,11 @@
+clc;
+clear all;
+n=-15:15;
+x1=(n.*n).*(stepseq(-5,-15,15)-stepseq(6,-15,15));
+x2=10*stepseq(0,-15,15);
+x3=20.*((0.5).^n).*(stepseq(4,-15,15)-stepseq(10,-15,15));
+x=x1+x2+x3;
+stem(n,x);
+xlabel('n');
+ylabel('x[n]');
+title('Activity 2 B');

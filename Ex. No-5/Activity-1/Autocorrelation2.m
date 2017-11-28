@@ -1,0 +1,10 @@
+clc;
+clear all;
+n1=-20:0;
+x1=(0.8).^n1;
+[x2,n2]=sigfold(x1,n1);
+[y,n]=convm(x1,n1,x2,n2);
+stem(n,y);
+title('Auto Correlation-2');
+xlabel('n');
+ylabel('x[n]');

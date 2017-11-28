@@ -1,0 +1,12 @@
+clc;
+clear all;
+n1=0:20;
+x1=(0.9).^n1;
+n2=-20:0;
+x2=(0.8).^n2;
+[x3,n3]=sigfold(x1,n1);
+[y,n]=convm(x2,n2,x3,n3);
+stem(n,y);
+title('Cross Correlation-2');
+xlabel('n');
+ylabel('x[n]');

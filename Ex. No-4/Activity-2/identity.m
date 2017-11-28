@@ -1,0 +1,14 @@
+clc;
+n1= -10:20;
+x1=n1;
+[y,n]=impseq(0,-10,10);
+[y2,n2]=convm(x1,n1,y,n);
+subplot(2,1,1);
+stem(n2,y2);
+xlabel('[n]');
+ylabel('x[n]');
+title('Identity');
+subplot(2,1,2);
+stem(n1,x1);
+xlabel('[n]');
+ylabel('x[n]');

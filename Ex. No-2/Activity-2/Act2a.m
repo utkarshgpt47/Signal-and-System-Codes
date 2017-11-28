@@ -1,0 +1,10 @@
+clc;
+clear all;
+n=-1:10;
+x1=stepseq(2,-1,10);
+x2=stepseq(8,-1,10);
+x=x1-x2;
+stem(n,x);
+xlabel('n');
+ylabel('x[n]');
+title('Activity 2 A');

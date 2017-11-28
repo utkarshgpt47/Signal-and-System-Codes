@@ -1,0 +1,14 @@
+clc;
+clear all;
+t1=-10:.01:-4.01;
+x1=0*t1;
+t2=-4:.01:2.99;
+x2=t2+2;
+t3=3:.01:10;
+x3=t3-2;
+t=[t1 t2 t3];
+x=[x1 x2 x3];
+plot(t,x);
+xlabel('time');
+ylabel('x(t)');
+title('Activity 2(a)');

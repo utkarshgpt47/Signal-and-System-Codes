@@ -1,0 +1,22 @@
+clc;
+clear all;
+n1= -10:20;
+n2= 0:30;
+n3= -5:10;
+x1=n1;
+x2=cos(0.1*pi*n2);
+x3=1.2.^n3;
+
+[y4,n4]=convm(x1,n1,x2,n2);
+[y5,n5]=convm(y4,n4,x3,n3);
+subplot(2,1,1);
+stem(n5,y5);
+xlabel('[n]');
+ylabel('x[n]');
+title('Associative');
+[y6,n6]=convm(x2,n2,x3,n3);
+[y7,n7]=convm(y6,n6,x1,n1);
+subplot(2,1,2);
+stem(n7,y7);
+xlabel('[n]');
+ylabel('x[n]');

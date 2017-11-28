@@ -1,0 +1,14 @@
+clc;
+clear all;
+n1=0:1:3;
+x1=0*n1;
+n2=4:1:7;
+x2=2*n2-4;
+n3=8:1:15;
+x3=4-n3;
+n=[n1 n2 n3];
+x=[x1 x2 x3];
+stem(n,x);
+xlabel('time');
+ylabel('x[n]');
+title('Activity 2(b)');

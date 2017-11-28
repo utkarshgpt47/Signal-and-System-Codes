@@ -1,0 +1,16 @@
+clc;
+clear all;
+n=-3:4;
+x=[1,1,-2,4,6,-5,8,10];
+x0=3*x;
+subplot(2,1,1);
+stem(n,x0);
+xlabel('n');
+ylabel('x[n]');
+title('Activity 2 A');
+[x1,m]=sigshift(x,n,2);
+y=3*x1;
+subplot(2,1,2);
+stem(m,y);
+xlabel('n');
+ylabel('x[n]');
